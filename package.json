@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node --watch ./bin/www",
+    "start": "nodemon ./bin/www",
     "dev": "SET DEBUG=express-locallibrary-tutorial:* & npm run start"
   },
   "dependencies": {
@@ -15,5 +15,8 @@
     "mongoose": "^8.0.4",
     "morgan": "~1.9.1",
     "pug": "2.0.0-beta11"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
   }
 }
