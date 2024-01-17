@@ -5,6 +5,12 @@ const BookInstance = require('../models/bookinstance');
 
 const asyncHandler = require('express-async-handler');
 
+exports.allBooks = asyncHandler(async (req, res, next) => {
+  const books = Book.find().sort({ title: 1 }).exec();
+
+  console.log(444, res);
+});
+
 exports.index = asyncHandler(async (req, res, next) => {
   // Get details of books, book instances, authors and genre counts (in parallel)
   const [
