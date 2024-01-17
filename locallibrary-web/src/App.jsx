@@ -1,15 +1,10 @@
 import './App.css';
-import { Button } from 'antd';
-import libraryApi from './api/libraryApi.js';
+import Home from './views/Home.jsx';
 
 function App () {
-  const onClick = (e) => {
-    libraryApi.get();
-  };
-
   return (
     <>
-      <Button onClick={onClick} type="primary">primary button</Button>
+      <Home></Home>
     </>
   );
 }

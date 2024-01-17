@@ -1,7 +1,7 @@
-import axios from 'axios';
+import { get } from '../utils/request.js';
 
 export default {
   get () {
-    return axios.get('/api/book/all');
+    return get('/api/book/all');
   },
 };
